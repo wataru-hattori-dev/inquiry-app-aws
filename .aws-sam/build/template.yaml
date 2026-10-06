@@ -1,0 +1,117 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'inquiry-app-aws Serverless Inquiry Form Application
+
+  '
+Globals:
+  Function:
+    Timeout: 10
+    MemorySize: 128
+    Runtime: python3.11
+    Architectures:
+    - x86_64
+Resources:
+  InquiriesTable:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      TableName: InquiriesTable
+      PrimaryKey:
+        Name: id
+        Type: String
+  InquiryApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      CorsConfiguration:
+        AllowMethods:
+        - GET
+        - POST
+        - DELETE
+        - OPTIONS
+        AllowHeaders:
+        - Content-Type
+        - Authorization
+        AllowOrigins:
+        - '*'
+  CreateInquiryFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: CreateInquiryFunction
+      Handler: create_inquiry.lambda_handler
+      Environment:
+        Variables:
+          TABLE_NAME:
+            Ref: InquiriesTable
+          DYNAMODB_ENDPOINT_URL: ''
+      Policies:
+      - DynamoDBWritePolicy:
+          TableName:
+            Ref: InquiriesTable
+      Events:
+        CreateApi:
+          Type: HttpApi
+          Properties:
+            Path: /inquiries
+            Method: post
+            ApiId:
+              Ref: InquiryApi
+    Metadata:
+      SamResourceId: CreateInquiryFunction
+  ListInquiriesFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ListInquiriesFunction
+      Handler: list_inquiries.lambda_handler
+      Environment:
+        Variables:
+          TABLE_NAME:
+            Ref: InquiriesTable
+          DYNAMODB_ENDPOINT_URL: ''
+      Policies:
+      - DynamoDBReadPolicy:
+          TableName:
+            Ref: InquiriesTable
+      Events:
+        ListApi:
+          Type: HttpApi
+          Properties:
+            Path: /inquiries
+            Method: get
+            ApiId:
+              Ref: InquiryApi
+    Metadata:
+      SamResourceId: ListInquiriesFunction
+  DeleteInquiryFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: DeleteInquiryFunction
+      Handler: delete_inquiry.lambda_handler
+      Environment:
+        Variables:
+          TABLE_NAME:
+            Ref: InquiriesTable
+          DYNAMODB_ENDPOINT_URL: ''
+      Policies:
+      - Statement:
+        - Sid: DynamoDBDeletePolicy
+          Effect: Allow
+          Action:
+          - dynamodb:DeleteItem
+          Resource:
+            Fn::GetAtt:
+            - InquiriesTable
+            - Arn
+      Events:
+        DeleteApi:
+          Type: HttpApi
+          Properties:
+            Path: /inquiries/{id}
+            Method: delete
+            ApiId:
+              Ref: InquiryApi
+    Metadata:
+      SamResourceId: DeleteInquiryFunction
+Outputs:
+  ApiEndpoint:
+    Description: API Gateway endpoint URL for Prod stage
+    Value:
+      Fn::Sub: https://${InquiryApi}.execute-api.${AWS::Region}.amazonaws.com

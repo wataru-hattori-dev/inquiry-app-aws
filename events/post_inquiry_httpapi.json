@@ -1,0 +1,17 @@
+{
+  "version": "2.0",
+  "routeKey": "POST /inquiries",
+  "rawPath": "/inquiries",
+  "rawQueryString": "",
+  "headers": {
+    "content-type": "application/json"
+  },
+  "requestContext": {
+    "http": {
+      "method": "POST",
+      "path": "/inquiries"
+    }
+  },
+  "body": "{\"name\":\"Test\",\"email\":\"t@example.com\",\"message\":\"hello\"}",
+  "isBase64Encoded": false
+}

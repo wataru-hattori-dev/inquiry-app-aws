@@ -1,0 +1,114 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  inquiry-app-aws
+  Serverless Inquiry Form Application
+
+Globals:
+  Function:
+    Timeout: 10
+    MemorySize: 128
+    Runtime: python3.11
+    Architectures:
+      - x86_64
+
+Resources:
+  # 1. DynamoDB テーブル定義
+  InquiriesTable:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      TableName: InquiriesTable
+      PrimaryKey:
+        Name: id
+        Type: String
+
+  # 2. HTTP API Gateway (CORS設定付き)
+  InquiryApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      CorsConfiguration:
+        AllowMethods:
+          - GET
+          - POST
+          - DELETE
+          - OPTIONS
+        AllowHeaders:
+          - Content-Type
+          - Authorization
+        AllowOrigins:
+          - "*"
+
+  # 3. 問い合わせ作成用 Lambda (POST)
+  CreateInquiryFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: backend/src/
+      Handler: create_inquiry.lambda_handler
+      Environment:
+        Variables:
+          TABLE_NAME: !Ref InquiriesTable
+          # ローカル: env.local.json で http://host.docker.internal:8000 を指定。本番は未設定のまま。
+          DYNAMODB_ENDPOINT_URL: ""
+      Policies:
+        - DynamoDBWritePolicy:
+            TableName: !Ref InquiriesTable
+      Events:
+        CreateApi:
+          Type: HttpApi
+          Properties:
+            Path: /inquiries
+            Method: post
+            ApiId: !Ref InquiryApi
+
+  # 4. 問い合わせ一覧取得用 Lambda (GET)
+  ListInquiriesFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: backend/src/
+      Handler: list_inquiries.lambda_handler
+      Environment:
+        Variables:
+          TABLE_NAME: !Ref InquiriesTable
+          DYNAMODB_ENDPOINT_URL: ""
+      Policies:
+        - DynamoDBReadPolicy:
+            TableName: !Ref InquiriesTable
+      Events:
+        ListApi:
+          Type: HttpApi
+          Properties:
+            Path: /inquiries
+            Method: get
+            ApiId: !Ref InquiryApi
+
+  # 5. 問い合わせ削除用 Lambda (DELETE)
+  # NOTE: SAM に DynamoDBDeletePolicy テンプレートは存在しないため、
+  #       DeleteItem のみを許可する同等のインラインポリシーを使用する。
+  DeleteInquiryFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: backend/src/
+      Handler: delete_inquiry.lambda_handler
+      Environment:
+        Variables:
+          TABLE_NAME: !Ref InquiriesTable
+          DYNAMODB_ENDPOINT_URL: ""
+      Policies:
+        - Statement:
+            - Sid: DynamoDBDeletePolicy
+              Effect: Allow
+              Action:
+                - dynamodb:DeleteItem
+              Resource: !GetAtt InquiriesTable.Arn
+      Events:
+        DeleteApi:
+          Type: HttpApi
+          Properties:
+            Path: /inquiries/{id}
+            Method: delete
+            ApiId: !Ref InquiryApi
+
+Outputs:
+  ApiEndpoint:
+    Description: "API Gateway endpoint URL for Prod stage"
+    Value: !Sub "https://${InquiryApi}.execute-api.${AWS::Region}.amazonaws.com"

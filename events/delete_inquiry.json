@@ -1,0 +1,14 @@
+{
+  "version": "2.0",
+  "routeKey": "DELETE /inquiries/{id}",
+  "rawPath": "/inquiries/REPLACE_ID",
+  "pathParameters": {
+    "id": "REPLACE_ID"
+  },
+  "requestContext": {
+    "http": {
+      "method": "DELETE",
+      "path": "/inquiries/REPLACE_ID"
+    }
+  }
+}

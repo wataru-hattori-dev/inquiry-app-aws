@@ -1,0 +1,11 @@
+{
+  "version": "2.0",
+  "routeKey": "GET /inquiries",
+  "rawPath": "/inquiries",
+  "requestContext": {
+    "http": {
+      "method": "GET",
+      "path": "/inquiries"
+    }
+  }
+}

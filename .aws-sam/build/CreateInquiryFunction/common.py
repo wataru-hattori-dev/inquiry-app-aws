@@ -57,3 +57,12 @@ def json_response(status_code: int, body: Any) -> dict[str, Any]:
 
 def error_response(status_code: int, error: str, message: str) -> dict[str, Any]:
     return json_response(status_code, {"error": error, "message": message})
+
+
+def no_content_response() -> dict[str, Any]:
+    """204 with CORS only (no JSON body)."""
+    return {
+        "statusCode": 204,
+        "headers": {"Access-Control-Allow-Origin": "*"},
+        "body": "",
+    }

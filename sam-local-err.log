@@ -1,0 +1,394 @@
+2026-10-07 16:32:53,985 | No config file found in this directory.
+2026-10-07 16:32:53,990 | OSError occurred while reading TOML file: [Errno 2] No such file or directory: 'C:\\Users\\ww-surface-90-u\\Desktop\\AI�J��\\inquiry-app-aws\\samconfig.toml'
+2026-10-07 16:32:53,992 | Config file location: C:\Users\ww-surface-90-u\Desktop\AI�J��\inquiry-app-aws\samconfig.toml
+2026-10-07 16:32:53,995 | Config file 'C:\Users\ww-surface-90-u\Desktop\AI�J��\inquiry-app-aws\samconfig.toml' does not exist
+2026-10-07 16:32:54,030 | Using SAM Template at C:\Users\ww-surface-90-u\Desktop\AI�J��\inquiry-app-aws\.aws-sam\build\template.yaml
+2026-10-07 16:32:54,033 | Empty parameter set ({})
+2026-10-07 16:32:54,133 | OSError occurred while reading TOML file: [Errno 2] No such file or directory: 'C:\\Users\\ww-surface-90-u\\Desktop\\AI�J��\\inquiry-app-aws\\samconfig.toml'
+2026-10-07 16:32:54,136 | Using config file: samconfig.toml, config environment: default
+2026-10-07 16:32:54,139 | Expand command line arguments to:
+2026-10-07 16:32:54,142 | --template_file=C:\Users\ww-surface-90-u\Desktop\AI�J��\inquiry-app-aws\.aws-sam\build\template.yaml --env_vars=env.local.json --host=127.0.0.1 --port=3000 --static_dir=public --layer_cache_basedir=C:\Users\ww-surface-90-u\AppData\Roaming\AWS SAM\layers-pkg --container_host=localhost --container_host_interface=127.0.0.1 
+2026-10-07 16:32:54,368 | local start-api command is called
+2026-10-07 16:32:57,475 | No current session found, using default AWS::AccountId
+2026-10-07 16:32:57,509 | No Parameters detected in the template
+2026-10-07 16:32:57,720 | There is no customer defined id or cdk path defined for resource InquiriesTable, so we will use the resource logical id as the resource id
+2026-10-07 16:32:57,723 | There is no customer defined id or cdk path defined for resource InquiryApi, so we will use the resource logical id as the resource id
+2026-10-07 16:32:57,726 | Sam customer defined id is more priority than other IDs. Customer defined id for resource CreateInquiryFunction is CreateInquiryFunction
+2026-10-07 16:32:57,728 | Sam customer defined id is more priority than other IDs. Customer defined id for resource ListInquiriesFunction is ListInquiriesFunction
+2026-10-07 16:32:57,731 | Sam customer defined id is more priority than other IDs. Customer defined id for resource DeleteInquiryFunction is DeleteInquiryFunction
+2026-10-07 16:32:57,740 | 0 stacks found in the template
+2026-10-07 16:32:57,743 | No Parameters detected in the template
+2026-10-07 16:32:57,852 | There is no customer defined id or cdk path defined for resource InquiriesTable, so we will use the resource logical id as the resource id
+2026-10-07 16:32:57,857 | There is no customer defined id or cdk path defined for resource InquiryApi, so we will use the resource logical id as the resource id
+2026-10-07 16:32:57,860 | Sam customer defined id is more priority than other IDs. Customer defined id for resource CreateInquiryFunction is CreateInquiryFunction
+2026-10-07 16:32:57,862 | Sam customer defined id is more priority than other IDs. Customer defined id for resource ListInquiriesFunction is ListInquiriesFunction
+2026-10-07 16:32:57,864 | Sam customer defined id is more priority than other IDs. Customer defined id for resource DeleteInquiryFunction is DeleteInquiryFunction
+2026-10-07 16:32:57,869 | 5 resources found in the stack 
+2026-10-07 16:32:57,874 | Found Serverless function with name='CreateInquiryFunction' and CodeUri='CreateInquiryFunction'
+2026-10-07 16:32:57,877 | --base-dir is not presented, adjusting uri CreateInquiryFunction relative to C:\Users\ww-surface-90-u\Desktop\AI�J��\inquiry-app-aws\.aws-sam\build\template.yaml
+2026-10-07 16:32:57,879 | Found Serverless function with name='ListInquiriesFunction' and CodeUri='ListInquiriesFunction'
+2026-10-07 16:32:57,880 | --base-dir is not presented, adjusting uri ListInquiriesFunction relative to C:\Users\ww-surface-90-u\Desktop\AI�J��\inquiry-app-aws\.aws-sam\build\template.yaml
+2026-10-07 16:32:57,881 | Found Serverless function with name='DeleteInquiryFunction' and CodeUri='DeleteInquiryFunction'
+2026-10-07 16:32:57,883 | --base-dir is not presented, adjusting uri DeleteInquiryFunction relative to C:\Users\ww-surface-90-u\Desktop\AI�J��\inquiry-app-aws\.aws-sam\build\template.yaml
+2026-10-07 16:32:57,885 | ContainerClientFactory.create_client() called
+2026-10-07 16:32:57,887 | Admin preference: None
+2026-10-07 16:32:57,888 | Using auto-detected client creation
+2026-10-07 16:32:57,889 | Trying Docker client creation
+2026-10-07 16:32:57,891 | Creating Docker container client from environment variable.
+2026-10-07 16:32:57,892 | Creating container client with parameters: {'version': '1.35'}
+2026-10-07 16:32:57,895 | DockerContainerClient created successfully
+2026-10-07 16:32:57,917 | Fall back docker api version to 1.44: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:32:57,937 | Docker daemon check succeeded with fallback: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:32:57,939 | Using Docker as Container Engine.
+2026-10-07 16:32:57,940 | Set global container socket path: container_socket_path=
+2026-10-07 16:32:57,941 | Detected Inline Swagger definition
+2026-10-07 16:32:57,943 | Parsing Swagger document using 3.0 specification
+2026-10-07 16:32:57,944 | Found '0' authorizers in resource 'InquiryApi'
+2026-10-07 16:32:57,945 | Lambda function integration not found in Swagger document at path='/inquiries' method='post'
+2026-10-07 16:32:57,946 | Lambda function integration not found in Swagger document at path='/inquiries' method='get'
+2026-10-07 16:32:57,947 | Lambda function integration not found in Swagger document at path='/inquiries/{id}' method='delete'
+2026-10-07 16:32:57,948 | Found '0' APIs in resource 'InquiryApi'
+2026-10-07 16:32:57,949 | authorizer not found or disabled, returning early
+2026-10-07 16:32:57,950 | Found '1' API Events in Serverless function with name 'CreateInquiryFunction'
+2026-10-07 16:32:57,951 | Found '1' API Events in Serverless function with name 'ListInquiriesFunction'
+2026-10-07 16:32:57,952 | Found '1' API Events in Serverless function with name 'DeleteInquiryFunction'
+2026-10-07 16:32:57,954 | Removed duplicates from '3' Explicit APIs and '0' Implicit APIs to produce '3' APIs
+2026-10-07 16:32:57,955 | 3 APIs found in the template
+2026-10-07 16:32:57,965 | ContainerClientFactory.create_client() called
+2026-10-07 16:32:57,967 | Admin preference: None
+2026-10-07 16:32:57,968 | Using auto-detected client creation
+2026-10-07 16:32:57,969 | Trying Docker client creation
+2026-10-07 16:32:57,971 | Creating Docker container client from environment variable.
+2026-10-07 16:32:57,973 | Creating container client with parameters: {'version': '1.35'}
+2026-10-07 16:32:57,975 | DockerContainerClient created successfully
+2026-10-07 16:32:57,993 | Fall back docker api version to 1.44: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:32:58,020 | Docker daemon check succeeded with fallback: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:32:58,022 | Using Docker as Container Engine.
+2026-10-07 16:32:58,023 | Set global container socket path: container_socket_path=
+2026-10-07 16:32:58,058 | Mounting DeleteInquiryFunction at http://127.0.0.1:3000/inquiries/{id} [DELETE, OPTIONS]
+2026-10-07 16:32:58,059 | Mounting CreateInquiryFunction at http://127.0.0.1:3000/inquiries [POST, OPTIONS]
+2026-10-07 16:32:58,060 | Mounting ListInquiriesFunction at http://127.0.0.1:3000/inquiries [GET, OPTIONS]
+2026-10-07 16:32:58,061 | You can now browse to the above endpoints to invoke your functions. You do not need to restart/reload SAM CLI while working on your functions, changes will be reflected instantly/automatically. If you used sam build before running local commands, you will need to re-run sam build for the changes to be picked up. You only need to restart SAM CLI if you update your AWS SAM template
+2026-10-07 16:32:58,062 | Localhost server is starting up. Multi-threading = True
+2026-10-07 16:32:58,063 | Setting SIGTERM interrupt handler
+2026-10-07 16:32:58 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2026-10-07 16:32:58 [33mPress CTRL+C to quit[0m
+2026-10-07 16:45:37,461 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /inquiries', 'rawPath': '/inquiries', 'rawQueryString': '', 'cookies': [], 'headers': {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36', 'Sec-Ch-Ua': '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'ja,en-US;q=0.9,en;q=0.8', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/inquiries', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': 'b82bff4c-6318-4db1-ae0c-15813e45d347', 'routeKey': 'GET /inquiries', 'stage': '$default', 'time': '07/Oct/2026:07:32:54 +0000', 'timeEpoch': 1791358374, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {}, 'stageVariables': None, 'isBase64Encoded': False}
+2026-10-07 16:45:37,464 | Found one Lambda function with name 'ListInquiriesFunction'
+2026-10-07 16:45:37,465 | Invoking list_inquiries.lambda_handler (python3.11)
+2026-10-07 16:45:37,466 | Environment variables data found for specific function in standard format
+2026-10-07 16:45:37,466 | Loading AWS credentials from session with profile 'None'
+2026-10-07 16:45:37,500 | Resolving code path. Cwd=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build, CodeUri=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:45:37,501 | Resolved absolute path to code is C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:45:37,502 | Resolving code path. Cwd=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build, CodeUri=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:45:37,502 | Resolved real code path to C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:45:37,504 | Code C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction is not a zip/jar file
+2026-10-07 16:45:37,506 | ContainerClientFactory.create_client() called
+2026-10-07 16:45:37,506 | Admin preference: None
+2026-10-07 16:45:37,507 | Using auto-detected client creation
+2026-10-07 16:45:37,507 | Trying Docker client creation
+2026-10-07 16:45:37,508 | Creating Docker container client from environment variable.
+2026-10-07 16:45:37,509 | Creating container client with parameters: {'version': '1.35'}
+2026-10-07 16:45:37,510 | DockerContainerClient created successfully
+2026-10-07 16:45:37,522 | Fall back docker api version to 1.44: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:45:37,534 | Docker daemon check succeeded with fallback: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:45:37,535 | Using Docker as Container Engine.
+2026-10-07 16:45:37,536 | Set global container socket path: container_socket_path=
+2026-10-07 16:45:39,211 | Local image is up-to-date
+2026-10-07 16:45:39,279 | Checking free port on 127.0.0.1:6146
+2026-10-07 16:45:39,348 | Using local image: public.ecr.aws/lambda/python:3.11-rapid-x86_64.
+
+2026-10-07 16:45:39,349 | Mounting C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction as /var/task:ro,delegated, inside runtime container
+2026-10-07 16:45:39,351 | ContainerClientFactory.create_client() called
+2026-10-07 16:45:39,352 | Admin preference: None
+2026-10-07 16:45:39,352 | Using auto-detected client creation
+2026-10-07 16:45:39,353 | Trying Docker client creation
+2026-10-07 16:45:39,354 | Creating Docker container client from environment variable.
+2026-10-07 16:45:39,355 | Creating container client with parameters: {'version': '1.35'}
+2026-10-07 16:45:39,358 | DockerContainerClient created successfully
+2026-10-07 16:45:39,369 | Fall back docker api version to 1.44: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:45:39,381 | Docker daemon check succeeded with fallback: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:45:39,382 | Using Docker as Container Engine.
+2026-10-07 16:45:39,383 | Set global container socket path: container_socket_path=
+2026-10-07 16:45:39,566 | SAM_CONTAINER_ID: fde495c49e7e486ff97dce5b19854d63f0f187931f39ac6934837301b4d6ac9d
+2026-10-07 16:45:39,567 | Initialized container fde495c49e7e486ff97dce5b19854d63f0f187931f39ac6934837301b4d6ac9d with max_concurrency=1
+2026-10-07 16:45:40,769 | Starting a timer for 10 seconds for function 'ListInquiriesFunction'
+2026-10-07 16:45:40,773 | Container-fde495c49e7e (concurrency available: 1/1) - ALLOWED for request ({"body": "", "cookies": [], "headers": {"Accept": "*/*", "Accept-Encoding": "gzip, deflate, br, zstd", "Accept-Language": "ja,en-US;q=0.9,en;q=0.8", "Connection": "keep-alive", "Host": "127.0.0.1:3000", "Origin": "http://localhost:5173", "Referer": "http://localhost:5173/", "Sec-Ch-Ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"", "Sec-Ch-Ua-Mobile": "?0", "Sec-Ch-Ua-Platform": "\"Windows\"", "Sec-Fetch-Dest": "empty", "Sec-Fetch-Mode": "cors", "Sec-Fetch-Site": "cross-site", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36", "X-Forwarded-Port": "3000", "X-Forwarded-Proto": "http"}, "isBase64Encoded": false, "pathParameters": {}, "rawPath": "/inquiries", "rawQueryString": "", "requestContext": {"accountId": "123456789012", "apiId": "1234567890", "domainName": "localhost", "domainPrefix": "localhost", "http": {"method": "GET", "path": "/inquiries", "protocol": "HTTP/1.1", "sourceIp": "127.0.0.1", "userAgent": "Custom User Agent String"}, "requestId": "b82bff4c-6318-4db1-ae0c-15813e45d347", "routeKey": "GET /inquiries", "stage": "$default", "time": "07/Oct/2026:07:32:54 +0000", "timeEpoch": 1791358374}, "routeKey": "GET /inquiries", "stageVariables": null, "version": "2.0"})
+START RequestId: a7b54371-17cb-408e-91c6-c95d0c238b32 Version: $LATEST
+[INFO]	2026-10-07T07:45:43.477Z	a7b54371-17cb-408e-91c6-c95d0c238b32	Scan table=InquiriesTable
+[INFO]	2026-10-07T07:45:43.478Z	a7b54371-17cb-408e-91c6-c95d0c238b32	Using DynamoDB endpoint: http://host.docker.internal:8000 (region=ap-northeast-1)
+END RequestId: a7b54371-17cb-408e-91c6-c95d0c238b32
+REPORT RequestId: a7b54371-17cb-408e-91c6-c95d0c238b32	Init Duration: 0.09 ms	Duration: 2518.85 ms	Billed Duration: 2519 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
+2026-10-07 16:45:44,357 | [Container state] OOMKilled False
+[ERROR] [1791359144461] LAMBDA_RUNTIME Failed to get next invocation. No Response from endpoint
+Traceback (most recent call last):
+  File "/var/runtime/bootstrap.py", line 63, in <module>
+2026-10-07 16:45:44,950 | Cleaning all decompressed code dirs
+2026-10-07 16:45:44,952 | Unable to find Click Context for getting session_id.
+2026-10-07 16:45:44 127.0.0.1 - - [07/Oct/2026 16:45:44] "GET /inquiries HTTP/1.1" 200 -
+2026-10-07 16:45:44,984 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /inquiries', 'rawPath': '/inquiries', 'rawQueryString': '', 'cookies': [], 'headers': {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36', 'Sec-Ch-Ua': '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'ja,en-US;q=0.9,en;q=0.8', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/inquiries', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': 'b82bff4c-6318-4db1-ae0c-15813e45d347', 'routeKey': 'GET /inquiries', 'stage': '$default', 'time': '07/Oct/2026:07:32:54 +0000', 'timeEpoch': 1791358374, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {}, 'stageVariables': None, 'isBase64Encoded': False}
+2026-10-07 16:45:44,987 | Found one Lambda function with name 'ListInquiriesFunction'
+2026-10-07 16:45:44,991 | Invoking list_inquiries.lambda_handler (python3.11)
+2026-10-07 16:45:44,997 | Environment variables data found for specific function in standard format
+2026-10-07 16:45:45,000 | Resolving code path. Cwd=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build, CodeUri=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:45:45,006 | Resolved absolute path to code is C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:45:45,007 | Resolving code path. Cwd=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build, CodeUri=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:45:45,009 | Resolved real code path to C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:45:45,010 | Code C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction is not a zip/jar file
+2026-10-07 16:45:45,274 | Checking free port on 127.0.0.1:5759
+2026-10-07 16:45:45,394 | Using local image: public.ecr.aws/lambda/python:3.11-rapid-x86_64.
+
+2026-10-07 16:45:45,395 | Mounting C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction as /var/task:ro,delegated, inside runtime container
+2026-10-07 16:45:45,398 | ContainerClientFactory.create_client() called
+2026-10-07 16:45:45,399 | Admin preference: None
+2026-10-07 16:45:45,400 | Using auto-detected client creation
+2026-10-07 16:45:45,401 | Trying Docker client creation
+2026-10-07 16:45:45,402 | Creating Docker container client from environment variable.
+2026-10-07 16:45:45,403 | Creating container client with parameters: {'version': '1.35'}
+2026-10-07 16:45:45,406 | DockerContainerClient created successfully
+2026-10-07 16:45:45,420 | Fall back docker api version to 1.44: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:45:45,437 | Docker daemon check succeeded with fallback: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:45:45,438 | Using Docker as Container Engine.
+2026-10-07 16:45:45,439 | Set global container socket path: container_socket_path=
+2026-10-07 16:45:45,659 | SAM_CONTAINER_ID: b2bf8a53e2498f81d59fdf8cd4f8ae66d9f5a21e16ed7cb31f47960bbc11f88f
+2026-10-07 16:45:45,660 | Initialized container b2bf8a53e2498f81d59fdf8cd4f8ae66d9f5a21e16ed7cb31f47960bbc11f88f with max_concurrency=1
+2026-10-07 16:45:46,517 | Starting a timer for 10 seconds for function 'ListInquiriesFunction'
+2026-10-07 16:45:46,522 | Container-b2bf8a53e249 (concurrency available: 1/1) - ALLOWED for request ({"body": "", "cookies": [], "headers": {"Accept": "*/*", "Accept-Encoding": "gzip, deflate, br, zstd", "Accept-Language": "ja,en-US;q=0.9,en;q=0.8", "Connection": "keep-alive", "Host": "127.0.0.1:3000", "Origin": "http://localhost:5173", "Referer": "http://localhost:5173/", "Sec-Ch-Ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"", "Sec-Ch-Ua-Mobile": "?0", "Sec-Ch-Ua-Platform": "\"Windows\"", "Sec-Fetch-Dest": "empty", "Sec-Fetch-Mode": "cors", "Sec-Fetch-Site": "cross-site", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36", "X-Forwarded-Port": "3000", "X-Forwarded-Proto": "http"}, "isBase64Encoded": false, "pathParameters": {}, "rawPath": "/inquiries", "rawQueryString": "", "requestContext": {"accountId": "123456789012", "apiId": "1234567890", "domainName": "localhost", "domainPrefix": "localhost", "http": {"method": "GET", "path": "/inquiries", "protocol": "HTTP/1.1", "sourceIp": "127.0.0.1", "userAgent": "Custom User Agent String"}, "requestId": "b82bff4c-6318-4db1-ae0c-15813e45d347", "routeKey": "GET /inquiries", "stage": "$default", "time": "07/Oct/2026:07:32:54 +0000", "timeEpoch": 1791358374}, "routeKey": "GET /inquiries", "stageVariables": null, "version": "2.0"})
+START RequestId: 55f55f5c-d11b-4279-8975-a8a1b55a3772 Version: $LATEST
+[INFO]	2026-10-07T07:45:48.316Z	55f55f5c-d11b-4279-8975-a8a1b55a3772	Scan table=InquiriesTable
+[INFO]	2026-10-07T07:45:48.316Z	55f55f5c-d11b-4279-8975-a8a1b55a3772	Using DynamoDB endpoint: http://host.docker.internal:8000 (region=ap-northeast-1)
+END RequestId: 55f55f5c-d11b-4279-8975-a8a1b55a3772
+REPORT RequestId: 55f55f5c-d11b-4279-8975-a8a1b55a3772	Init Duration: 0.12 ms	Duration: 1130.64 ms	Billed Duration: 1131 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
+2026-10-07 16:45:48,707 | [Container state] OOMKilled False
+2026-10-07 16:45:49,257 | Cleaning all decompressed code dirs
+2026-10-07 16:45:49 127.0.0.1 - - [07/Oct/2026 16:45:49] "GET /inquiries HTTP/1.1" 200 -
+2026-10-07 16:46:25 127.0.0.1 - - [07/Oct/2026 16:46:25] "OPTIONS /inquiries HTTP/1.1" 200 -
+2026-10-07 16:46:25,050 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'POST /inquiries', 'rawPath': '/inquiries', 'rawQueryString': '', 'cookies': [], 'headers': {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Content-Length': '79', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36', 'Sec-Ch-Ua': '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'ja,en-US;q=0.9,en;q=0.8', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'POST', 'path': '/inquiries', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': 'b82bff4c-6318-4db1-ae0c-15813e45d347', 'routeKey': 'POST /inquiries', 'stage': '$default', 'time': '07/Oct/2026:07:32:54 +0000', 'timeEpoch': 1791358374, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '{"name":"テスト1","email":"hattori-aaa@wizway.co.jp","message":"テスト1"}', 'pathParameters': {}, 'stageVariables': None, 'isBase64Encoded': False}
+2026-10-07 16:46:25,052 | Found one Lambda function with name 'CreateInquiryFunction'
+2026-10-07 16:46:25,052 | Invoking create_inquiry.lambda_handler (python3.11)
+2026-10-07 16:46:25,053 | Environment variables data found for specific function in standard format
+2026-10-07 16:46:25,054 | Resolving code path. Cwd=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build, CodeUri=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\CreateInquiryFunction
+2026-10-07 16:46:25,055 | Resolved absolute path to code is C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\CreateInquiryFunction
+2026-10-07 16:46:25,056 | Resolving code path. Cwd=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build, CodeUri=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\CreateInquiryFunction
+2026-10-07 16:46:25,057 | Resolved real code path to C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\CreateInquiryFunction
+2026-10-07 16:46:25,059 | Code C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\CreateInquiryFunction is not a zip/jar file
+2026-10-07 16:46:25,217 | Checking free port on 127.0.0.1:8805
+2026-10-07 16:46:25,314 | Using local image: public.ecr.aws/lambda/python:3.11-rapid-x86_64.
+
+2026-10-07 16:46:25,315 | Mounting C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\CreateInquiryFunction as /var/task:ro,delegated, inside runtime container
+2026-10-07 16:46:25,317 | ContainerClientFactory.create_client() called
+2026-10-07 16:46:25,318 | Admin preference: None
+2026-10-07 16:46:25,318 | Using auto-detected client creation
+2026-10-07 16:46:25,319 | Trying Docker client creation
+2026-10-07 16:46:25,320 | Creating Docker container client from environment variable.
+2026-10-07 16:46:25,321 | Creating container client with parameters: {'version': '1.35'}
+2026-10-07 16:46:25,323 | DockerContainerClient created successfully
+2026-10-07 16:46:25,335 | Fall back docker api version to 1.44: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:46:25,348 | Docker daemon check succeeded with fallback: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:46:25,349 | Using Docker as Container Engine.
+2026-10-07 16:46:25,350 | Set global container socket path: container_socket_path=
+2026-10-07 16:46:25,554 | SAM_CONTAINER_ID: d52ad2b5ffb2a5c497a5323e93fff01710b1177c64911dae4d256b09bda7fcb4
+2026-10-07 16:46:25,556 | Initialized container d52ad2b5ffb2a5c497a5323e93fff01710b1177c64911dae4d256b09bda7fcb4 with max_concurrency=1
+2026-10-07 16:46:26,530 | Starting a timer for 10 seconds for function 'CreateInquiryFunction'
+2026-10-07 16:46:26,536 | Container-d52ad2b5ffb2 (concurrency available: 1/1) - ALLOWED for request ({"body": "{\"name\":\"\u30c6\u30b9\u30c81\",\"email\":\"hattori-aaa@wizway.co.jp\",\"message\":\"\u30c6\u30b9\u30c81\"}", "cookies": [], "headers": {"Accept": "*/*", "Accept-Encoding": "gzip, deflate, br, zstd", "Accept-Language": "ja,en-US;q=0.9,en;q=0.8", "Connection": "keep-alive", "Content-Length": "79", "Content-Type": "application/json", "Host": "127.0.0.1:3000", "Origin": "http://localhost:5173", "Referer": "http://localhost:5173/", "Sec-Ch-Ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"", "Sec-Ch-Ua-Mobile": "?0", "Sec-Ch-Ua-Platform": "\"Windows\"", "Sec-Fetch-Dest": "empty", "Sec-Fetch-Mode": "cors", "Sec-Fetch-Site": "cross-site", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36", "X-Forwarded-Port": "3000", "X-Forwarded-Proto": "http"}, "isBase64Encoded": false, "pathParameters": {}, "rawPath": "/inquiries", "rawQueryString": "", "requestContext": {"accountId": "123456789012", "apiId": "1234567890", "domainName": "localhost", "domainPrefix": "localhost", "http": {"method": "POST", "path": "/inquiries", "protocol": "HTTP/1.1", "sourceIp": "127.0.0.1", "userAgent": "Custom User Agent String"}, "requestId": "b82bff4c-6318-4db1-ae0c-15813e45d347", "routeKey": "POST /inquiries", "stage": "$default", "time": "07/Oct/2026:07:32:54 +0000", "timeEpoch": 1791358374}, "routeKey": "POST /inquiries", "stageVariables": null, "version": "2.0"})
+START RequestId: 11be8d7e-cd81-4e2a-8213-61b29ed5227e Version: $LATEST
+[INFO]	2026-10-07T07:46:28.455Z	11be8d7e-cd81-4e2a-8213-61b29ed5227e	PutItem to table=InquiriesTable
+[INFO]	2026-10-07T07:46:28.456Z	11be8d7e-cd81-4e2a-8213-61b29ed5227e	Using DynamoDB endpoint: http://host.docker.internal:8000 (region=ap-northeast-1)
+END RequestId: 11be8d7e-cd81-4e2a-8213-61b29ed5227e
+REPORT RequestId: 11be8d7e-cd81-4e2a-8213-61b29ed5227e	Init Duration: 0.09 ms	Duration: 1248.36 ms	Billed Duration: 1249 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
+2026-10-07 16:46:28,927 | [Container state] OOMKilled False
+2026-10-07 16:46:29,599 | Cleaning all decompressed code dirs
+2026-10-07 16:46:29 127.0.0.1 - - [07/Oct/2026 16:46:29] "[35m[1mPOST /inquiries HTTP/1.1[0m" 201 -
+2026-10-07 16:46:29,621 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /inquiries', 'rawPath': '/inquiries', 'rawQueryString': '', 'cookies': [], 'headers': {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36', 'Sec-Ch-Ua': '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'ja,en-US;q=0.9,en;q=0.8', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/inquiries', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': 'b82bff4c-6318-4db1-ae0c-15813e45d347', 'routeKey': 'GET /inquiries', 'stage': '$default', 'time': '07/Oct/2026:07:32:54 +0000', 'timeEpoch': 1791358374, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {}, 'stageVariables': None, 'isBase64Encoded': False}
+2026-10-07 16:46:29,628 | Found one Lambda function with name 'ListInquiriesFunction'
+2026-10-07 16:46:29,630 | Invoking list_inquiries.lambda_handler (python3.11)
+2026-10-07 16:46:29,631 | Environment variables data found for specific function in standard format
+2026-10-07 16:46:29,633 | Resolving code path. Cwd=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build, CodeUri=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:46:29,635 | Resolved absolute path to code is C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:46:29,636 | Resolving code path. Cwd=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build, CodeUri=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:46:29,638 | Resolved real code path to C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:46:29,642 | Code C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction is not a zip/jar file
+2026-10-07 16:46:29,937 | Checking free port on 127.0.0.1:7313
+2026-10-07 16:46:30,072 | Using local image: public.ecr.aws/lambda/python:3.11-rapid-x86_64.
+
+2026-10-07 16:46:30,073 | Mounting C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction as /var/task:ro,delegated, inside runtime container
+2026-10-07 16:46:30,076 | ContainerClientFactory.create_client() called
+2026-10-07 16:46:30,077 | Admin preference: None
+2026-10-07 16:46:30,078 | Using auto-detected client creation
+2026-10-07 16:46:30,079 | Trying Docker client creation
+2026-10-07 16:46:30,080 | Creating Docker container client from environment variable.
+2026-10-07 16:46:30,082 | Creating container client with parameters: {'version': '1.35'}
+2026-10-07 16:46:30,084 | DockerContainerClient created successfully
+2026-10-07 16:46:30,104 | Fall back docker api version to 1.44: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:46:30,123 | Docker daemon check succeeded with fallback: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:46:30,125 | Using Docker as Container Engine.
+2026-10-07 16:46:30,127 | Set global container socket path: container_socket_path=
+2026-10-07 16:46:30,373 | SAM_CONTAINER_ID: 2a0f94b6a33ba834235c15abb39ec4d83a3320b50b495c0d4e4dc2697cf31b7e
+2026-10-07 16:46:30,375 | Initialized container 2a0f94b6a33ba834235c15abb39ec4d83a3320b50b495c0d4e4dc2697cf31b7e with max_concurrency=1
+2026-10-07 16:46:31,345 | Starting a timer for 10 seconds for function 'ListInquiriesFunction'
+2026-10-07 16:46:31,350 | Container-2a0f94b6a33b (concurrency available: 1/1) - ALLOWED for request ({"body": "", "cookies": [], "headers": {"Accept": "*/*", "Accept-Encoding": "gzip, deflate, br, zstd", "Accept-Language": "ja,en-US;q=0.9,en;q=0.8", "Connection": "keep-alive", "Host": "127.0.0.1:3000", "Origin": "http://localhost:5173", "Referer": "http://localhost:5173/", "Sec-Ch-Ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"", "Sec-Ch-Ua-Mobile": "?0", "Sec-Ch-Ua-Platform": "\"Windows\"", "Sec-Fetch-Dest": "empty", "Sec-Fetch-Mode": "cors", "Sec-Fetch-Site": "cross-site", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36", "X-Forwarded-Port": "3000", "X-Forwarded-Proto": "http"}, "isBase64Encoded": false, "pathParameters": {}, "rawPath": "/inquiries", "rawQueryString": "", "requestContext": {"accountId": "123456789012", "apiId": "1234567890", "domainName": "localhost", "domainPrefix": "localhost", "http": {"method": "GET", "path": "/inquiries", "protocol": "HTTP/1.1", "sourceIp": "127.0.0.1", "userAgent": "Custom User Agent String"}, "requestId": "b82bff4c-6318-4db1-ae0c-15813e45d347", "routeKey": "GET /inquiries", "stage": "$default", "time": "07/Oct/2026:07:32:54 +0000", "timeEpoch": 1791358374}, "routeKey": "GET /inquiries", "stageVariables": null, "version": "2.0"})
+START RequestId: bcf52a3c-1445-4e67-91fd-e43bd83bb57b Version: $LATEST
+[INFO]	2026-10-07T07:46:33.325Z	bcf52a3c-1445-4e67-91fd-e43bd83bb57b	Scan table=InquiriesTable
+[INFO]	2026-10-07T07:46:33.326Z	bcf52a3c-1445-4e67-91fd-e43bd83bb57b	Using DynamoDB endpoint: http://host.docker.internal:8000 (region=ap-northeast-1)
+END RequestId: bcf52a3c-1445-4e67-91fd-e43bd83bb57b
+REPORT RequestId: bcf52a3c-1445-4e67-91fd-e43bd83bb57b	Init Duration: 0.31 ms	Duration: 1396.63 ms	Billed Duration: 1397 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
+2026-10-07 16:46:33,820 | [Container state] OOMKilled False
+2026-10-07 16:46:34,406 | Cleaning all decompressed code dirs
+2026-10-07 16:46:34 127.0.0.1 - - [07/Oct/2026 16:46:34] "GET /inquiries HTTP/1.1" 200 -
+2026-10-07 16:47:32 127.0.0.1 - - [07/Oct/2026 16:47:32] "OPTIONS /inquiries HTTP/1.1" 200 -
+2026-10-07 16:47:32,166 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'POST /inquiries', 'rawPath': '/inquiries', 'rawQueryString': '', 'cookies': [], 'headers': {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Content-Length': '60', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36', 'Sec-Ch-Ua': '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'ja,en-US;q=0.9,en;q=0.8', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'POST', 'path': '/inquiries', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': 'b82bff4c-6318-4db1-ae0c-15813e45d347', 'routeKey': 'POST /inquiries', 'stage': '$default', 'time': '07/Oct/2026:07:32:54 +0000', 'timeEpoch': 1791358374, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '{"name":"あ","email":"hattoaai@wizway.co.jp","message":"a"}', 'pathParameters': {}, 'stageVariables': None, 'isBase64Encoded': False}
+2026-10-07 16:47:32,167 | Found one Lambda function with name 'CreateInquiryFunction'
+2026-10-07 16:47:32,168 | Invoking create_inquiry.lambda_handler (python3.11)
+2026-10-07 16:47:32,169 | Environment variables data found for specific function in standard format
+2026-10-07 16:47:32,170 | Resolving code path. Cwd=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build, CodeUri=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\CreateInquiryFunction
+2026-10-07 16:47:32,170 | Resolved absolute path to code is C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\CreateInquiryFunction
+2026-10-07 16:47:32,171 | Resolving code path. Cwd=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build, CodeUri=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\CreateInquiryFunction
+2026-10-07 16:47:32,172 | Resolved real code path to C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\CreateInquiryFunction
+2026-10-07 16:47:32,173 | Code C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\CreateInquiryFunction is not a zip/jar file
+2026-10-07 16:47:32,344 | Checking free port on 127.0.0.1:6664
+2026-10-07 16:47:32,427 | Using local image: public.ecr.aws/lambda/python:3.11-rapid-x86_64.
+
+2026-10-07 16:47:32,428 | Mounting C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\CreateInquiryFunction as /var/task:ro,delegated, inside runtime container
+2026-10-07 16:47:32,430 | ContainerClientFactory.create_client() called
+2026-10-07 16:47:32,431 | Admin preference: None
+2026-10-07 16:47:32,431 | Using auto-detected client creation
+2026-10-07 16:47:32,432 | Trying Docker client creation
+2026-10-07 16:47:32,433 | Creating Docker container client from environment variable.
+2026-10-07 16:47:32,434 | Creating container client with parameters: {'version': '1.35'}
+2026-10-07 16:47:32,435 | DockerContainerClient created successfully
+2026-10-07 16:47:32,448 | Fall back docker api version to 1.44: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:47:32,466 | Docker daemon check succeeded with fallback: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:47:32,467 | Using Docker as Container Engine.
+2026-10-07 16:47:32,468 | Set global container socket path: container_socket_path=
+2026-10-07 16:47:32,669 | SAM_CONTAINER_ID: 2f2bc7e3cf8018f97dbc8575719e5447c6c8a3a5b2aaf9e3e95067d7af8965c8
+2026-10-07 16:47:32,670 | Initialized container 2f2bc7e3cf8018f97dbc8575719e5447c6c8a3a5b2aaf9e3e95067d7af8965c8 with max_concurrency=1
+2026-10-07 16:47:33,662 | Starting a timer for 10 seconds for function 'CreateInquiryFunction'
+2026-10-07 16:47:33,668 | Container-2f2bc7e3cf80 (concurrency available: 1/1) - ALLOWED for request ({"body": "{\"name\":\"\u3042\",\"email\":\"hattoaai@wizway.co.jp\",\"message\":\"a\"}", "cookies": [], "headers": {"Accept": "*/*", "Accept-Encoding": "gzip, deflate, br, zstd", "Accept-Language": "ja,en-US;q=0.9,en;q=0.8", "Connection": "keep-alive", "Content-Length": "60", "Content-Type": "application/json", "Host": "127.0.0.1:3000", "Origin": "http://localhost:5173", "Referer": "http://localhost:5173/", "Sec-Ch-Ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"", "Sec-Ch-Ua-Mobile": "?0", "Sec-Ch-Ua-Platform": "\"Windows\"", "Sec-Fetch-Dest": "empty", "Sec-Fetch-Mode": "cors", "Sec-Fetch-Site": "cross-site", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36", "X-Forwarded-Port": "3000", "X-Forwarded-Proto": "http"}, "isBase64Encoded": false, "pathParameters": {}, "rawPath": "/inquiries", "rawQueryString": "", "requestContext": {"accountId": "123456789012", "apiId": "1234567890", "domainName": "localhost", "domainPrefix": "localhost", "http": {"method": "POST", "path": "/inquiries", "protocol": "HTTP/1.1", "sourceIp": "127.0.0.1", "userAgent": "Custom User Agent String"}, "requestId": "b82bff4c-6318-4db1-ae0c-15813e45d347", "routeKey": "POST /inquiries", "stage": "$default", "time": "07/Oct/2026:07:32:54 +0000", "timeEpoch": 1791358374}, "routeKey": "POST /inquiries", "stageVariables": null, "version": "2.0"})
+START RequestId: df0b18ff-016d-4069-a079-7ba0bf65dc01 Version: $LATEST
+[INFO]	2026-10-07T07:47:36.152Z	df0b18ff-016d-4069-a079-7ba0bf65dc01	PutItem to table=InquiriesTable
+[INFO]	2026-10-07T07:47:36.152Z	df0b18ff-016d-4069-a079-7ba0bf65dc01	Using DynamoDB endpoint: http://host.docker.internal:8000 (region=ap-northeast-1)
+END RequestId: df0b18ff-016d-4069-a079-7ba0bf65dc01
+REPORT RequestId: df0b18ff-016d-4069-a079-7ba0bf65dc01	Init Duration: 0.08 ms	Duration: 2081.67 ms	Billed Duration: 2082 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
+2026-10-07 16:47:36,818 | [Container state] OOMKilled False
+2026-10-07 16:47:37,393 | Cleaning all decompressed code dirs
+2026-10-07 16:47:37 127.0.0.1 - - [07/Oct/2026 16:47:37] "[35m[1mPOST /inquiries HTTP/1.1[0m" 201 -
+2026-10-07 16:47:37,414 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /inquiries', 'rawPath': '/inquiries', 'rawQueryString': '', 'cookies': [], 'headers': {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36', 'Sec-Ch-Ua': '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'ja,en-US;q=0.9,en;q=0.8', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/inquiries', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': 'b82bff4c-6318-4db1-ae0c-15813e45d347', 'routeKey': 'GET /inquiries', 'stage': '$default', 'time': '07/Oct/2026:07:32:54 +0000', 'timeEpoch': 1791358374, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {}, 'stageVariables': None, 'isBase64Encoded': False}
+2026-10-07 16:47:37,416 | Found one Lambda function with name 'ListInquiriesFunction'
+2026-10-07 16:47:37,417 | Invoking list_inquiries.lambda_handler (python3.11)
+2026-10-07 16:47:37,419 | Environment variables data found for specific function in standard format
+2026-10-07 16:47:37,420 | Resolving code path. Cwd=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build, CodeUri=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:47:37,421 | Resolved absolute path to code is C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:47:37,422 | Resolving code path. Cwd=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build, CodeUri=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:47:37,424 | Resolved real code path to C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:47:37,427 | Code C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction is not a zip/jar file
+2026-10-07 16:47:37,651 | Checking free port on 127.0.0.1:5955
+2026-10-07 16:47:37,751 | Using local image: public.ecr.aws/lambda/python:3.11-rapid-x86_64.
+
+2026-10-07 16:47:37,752 | Mounting C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction as /var/task:ro,delegated, inside runtime container
+2026-10-07 16:47:37,754 | ContainerClientFactory.create_client() called
+2026-10-07 16:47:37,755 | Admin preference: None
+2026-10-07 16:47:37,757 | Using auto-detected client creation
+2026-10-07 16:47:37,758 | Trying Docker client creation
+2026-10-07 16:47:37,759 | Creating Docker container client from environment variable.
+2026-10-07 16:47:37,760 | Creating container client with parameters: {'version': '1.35'}
+2026-10-07 16:47:37,763 | DockerContainerClient created successfully
+2026-10-07 16:47:37,777 | Fall back docker api version to 1.44: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:47:37,792 | Docker daemon check succeeded with fallback: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:47:37,794 | Using Docker as Container Engine.
+2026-10-07 16:47:37,795 | Set global container socket path: container_socket_path=
+2026-10-07 16:47:37,985 | SAM_CONTAINER_ID: 8037205d8a9f0b9363aedb22d03dfafbec13e4fb9591f16120cb70ea47d83ff8
+2026-10-07 16:47:37,986 | Initialized container 8037205d8a9f0b9363aedb22d03dfafbec13e4fb9591f16120cb70ea47d83ff8 with max_concurrency=1
+2026-10-07 16:47:38,785 | Starting a timer for 10 seconds for function 'ListInquiriesFunction'
+2026-10-07 16:47:38,787 | Container-8037205d8a9f (concurrency available: 1/1) - ALLOWED for request ({"body": "", "cookies": [], "headers": {"Accept": "*/*", "Accept-Encoding": "gzip, deflate, br, zstd", "Accept-Language": "ja,en-US;q=0.9,en;q=0.8", "Connection": "keep-alive", "Host": "127.0.0.1:3000", "Origin": "http://localhost:5173", "Referer": "http://localhost:5173/", "Sec-Ch-Ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"", "Sec-Ch-Ua-Mobile": "?0", "Sec-Ch-Ua-Platform": "\"Windows\"", "Sec-Fetch-Dest": "empty", "Sec-Fetch-Mode": "cors", "Sec-Fetch-Site": "cross-site", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36", "X-Forwarded-Port": "3000", "X-Forwarded-Proto": "http"}, "isBase64Encoded": false, "pathParameters": {}, "rawPath": "/inquiries", "rawQueryString": "", "requestContext": {"accountId": "123456789012", "apiId": "1234567890", "domainName": "localhost", "domainPrefix": "localhost", "http": {"method": "GET", "path": "/inquiries", "protocol": "HTTP/1.1", "sourceIp": "127.0.0.1", "userAgent": "Custom User Agent String"}, "requestId": "b82bff4c-6318-4db1-ae0c-15813e45d347", "routeKey": "GET /inquiries", "stage": "$default", "time": "07/Oct/2026:07:32:54 +0000", "timeEpoch": 1791358374}, "routeKey": "GET /inquiries", "stageVariables": null, "version": "2.0"})
+START RequestId: 822bcd88-a56f-4687-abbc-eb62494c485a Version: $LATEST
+[INFO]	2026-10-07T07:47:40.676Z	822bcd88-a56f-4687-abbc-eb62494c485a	Scan table=InquiriesTable
+[INFO]	2026-10-07T07:47:40.677Z	822bcd88-a56f-4687-abbc-eb62494c485a	Using DynamoDB endpoint: http://host.docker.internal:8000 (region=ap-northeast-1)
+END RequestId: 822bcd88-a56f-4687-abbc-eb62494c485a
+REPORT RequestId: 822bcd88-a56f-4687-abbc-eb62494c485a	Init Duration: 0.08 ms	Duration: 1197.58 ms	Billed Duration: 1198 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
+2026-10-07 16:47:41,041 | [Container state] OOMKilled False
+2026-10-07 16:47:41,653 | Cleaning all decompressed code dirs
+2026-10-07 16:47:41 127.0.0.1 - - [07/Oct/2026 16:47:41] "GET /inquiries HTTP/1.1" 200 -
+2026-10-07 16:48:05 127.0.0.1 - - [07/Oct/2026 16:48:05] "OPTIONS /inquiries/ddd60881-41c5-4362-ba73-1e41b4c162cf HTTP/1.1" 200 -
+2026-10-07 16:48:05,851 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'DELETE /inquiries/{id}', 'rawPath': '/inquiries/ddd60881-41c5-4362-ba73-1e41b4c162cf', 'rawQueryString': '', 'cookies': [], 'headers': {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36', 'Sec-Ch-Ua': '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'ja,en-US;q=0.9,en;q=0.8', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'DELETE', 'path': '/inquiries/ddd60881-41c5-4362-ba73-1e41b4c162cf', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': 'b82bff4c-6318-4db1-ae0c-15813e45d347', 'routeKey': 'DELETE /inquiries/{id}', 'stage': '$default', 'time': '07/Oct/2026:07:32:54 +0000', 'timeEpoch': 1791358374, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {'id': 'ddd60881-41c5-4362-ba73-1e41b4c162cf'}, 'stageVariables': None, 'isBase64Encoded': False}
+2026-10-07 16:48:05,852 | Found one Lambda function with name 'DeleteInquiryFunction'
+2026-10-07 16:48:05,853 | Invoking delete_inquiry.lambda_handler (python3.11)
+2026-10-07 16:48:05,854 | Environment variables data found for specific function in standard format
+2026-10-07 16:48:05,855 | Resolving code path. Cwd=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build, CodeUri=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\DeleteInquiryFunction
+2026-10-07 16:48:05,856 | Resolved absolute path to code is C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\DeleteInquiryFunction
+2026-10-07 16:48:05,857 | Resolving code path. Cwd=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build, CodeUri=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\DeleteInquiryFunction
+2026-10-07 16:48:05,857 | Resolved real code path to C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\DeleteInquiryFunction
+2026-10-07 16:48:05,858 | Code C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\DeleteInquiryFunction is not a zip/jar file
+2026-10-07 16:48:06,001 | Checking free port on 127.0.0.1:8691
+2026-10-07 16:48:06,084 | Using local image: public.ecr.aws/lambda/python:3.11-rapid-x86_64.
+
+2026-10-07 16:48:06,085 | Mounting C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\DeleteInquiryFunction as /var/task:ro,delegated, inside runtime container
+2026-10-07 16:48:06,087 | ContainerClientFactory.create_client() called
+2026-10-07 16:48:06,088 | Admin preference: None
+2026-10-07 16:48:06,089 | Using auto-detected client creation
+2026-10-07 16:48:06,090 | Trying Docker client creation
+2026-10-07 16:48:06,090 | Creating Docker container client from environment variable.
+2026-10-07 16:48:06,091 | Creating container client with parameters: {'version': '1.35'}
+2026-10-07 16:48:06,093 | DockerContainerClient created successfully
+2026-10-07 16:48:06,103 | Fall back docker api version to 1.44: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:48:06,115 | Docker daemon check succeeded with fallback: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:48:06,116 | Using Docker as Container Engine.
+2026-10-07 16:48:06,117 | Set global container socket path: container_socket_path=
+2026-10-07 16:48:06,292 | SAM_CONTAINER_ID: d8ef5d3eadd15342f9ef3b39dcfb7363f7675dd5bc03f15f58fa90d9abe44b6c
+2026-10-07 16:48:06,293 | Initialized container d8ef5d3eadd15342f9ef3b39dcfb7363f7675dd5bc03f15f58fa90d9abe44b6c with max_concurrency=1
+2026-10-07 16:48:07,115 | Starting a timer for 10 seconds for function 'DeleteInquiryFunction'
+2026-10-07 16:48:07,124 | Container-d8ef5d3eadd1 (concurrency available: 1/1) - ALLOWED for request ({"body": "", "cookies": [], "headers": {"Accept": "*/*", "Accept-Encoding": "gzip, deflate, br, zstd", "Accept-Language": "ja,en-US;q=0.9,en;q=0.8", "Connection": "keep-alive", "Host": "127.0.0.1:3000", "Origin": "http://localhost:5173", "Referer": "http://localhost:5173/", "Sec-Ch-Ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"", "Sec-Ch-Ua-Mobile": "?0", "Sec-Ch-Ua-Platform": "\"Windows\"", "Sec-Fetch-Dest": "empty", "Sec-Fetch-Mode": "cors", "Sec-Fetch-Site": "cross-site", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36", "X-Forwarded-Port": "3000", "X-Forwarded-Proto": "http"}, "isBase64Encoded": false, "pathParameters": {"id": "ddd60881-41c5-4362-ba73-1e41b4c162cf"}, "rawPath": "/inquiries/ddd60881-41c5-4362-ba73-1e41b4c162cf", "rawQueryString": "", "requestContext": {"accountId": "123456789012", "apiId": "1234567890", "domainName": "localhost", "domainPrefix": "localhost", "http": {"method": "DELETE", "path": "/inquiries/ddd60881-41c5-4362-ba73-1e41b4c162cf", "protocol": "HTTP/1.1", "sourceIp": "127.0.0.1", "userAgent": "Custom User Agent String"}, "requestId": "b82bff4c-6318-4db1-ae0c-15813e45d347", "routeKey": "DELETE /inquiries/{id}", "stage": "$default", "time": "07/Oct/2026:07:32:54 +0000", "timeEpoch": 1791358374}, "routeKey": "DELETE /inquiries/{id}", "stageVariables": null, "version": "2.0"})
+START RequestId: 1170b5b6-3891-40fe-b14f-d0df1cc424a0 Version: $LATEST
+[INFO]	2026-10-07T07:48:08.824Z	1170b5b6-3891-40fe-b14f-d0df1cc424a0	DeleteItem table=InquiriesTable
+[INFO]	2026-10-07T07:48:08.824Z	1170b5b6-3891-40fe-b14f-d0df1cc424a0	Using DynamoDB endpoint: http://host.docker.internal:8000 (region=ap-northeast-1)
+END RequestId: 1170b5b6-3891-40fe-b14f-d0df1cc424a0
+REPORT RequestId: 1170b5b6-3891-40fe-b14f-d0df1cc424a0	Init Duration: 0.08 ms	Duration: 973.84 ms	Billed Duration: 974 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
+2026-10-07 16:48:09,155 | [Container state] OOMKilled False
+2026-10-07 16:48:09,703 | Cleaning all decompressed code dirs
+2026-10-07 16:48:09,705 | No Content-Type given. Defaulting to 'application/json'.
+2026-10-07 16:48:09 127.0.0.1 - - [07/Oct/2026 16:48:09] "[35m[1mDELETE /inquiries/ddd60881-41c5-4362-ba73-1e41b4c162cf HTTP/1.1[0m" 204 -
+2026-10-07 16:48:09,731 | Constructed Event Version 2.0 to invoke Lambda. Event: {'version': '2.0', 'routeKey': 'GET /inquiries', 'rawPath': '/inquiries', 'rawQueryString': '', 'cookies': [], 'headers': {'Host': '127.0.0.1:3000', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36', 'Sec-Ch-Ua': '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:5173', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:5173/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'ja,en-US;q=0.9,en;q=0.8', 'X-Forwarded-Proto': 'http', 'X-Forwarded-Port': '3000'}, 'requestContext': {'accountId': '123456789012', 'apiId': '1234567890', 'http': {'method': 'GET', 'path': '/inquiries', 'protocol': 'HTTP/1.1', 'sourceIp': '127.0.0.1', 'userAgent': 'Custom User Agent String'}, 'requestId': 'b82bff4c-6318-4db1-ae0c-15813e45d347', 'routeKey': 'GET /inquiries', 'stage': '$default', 'time': '07/Oct/2026:07:32:54 +0000', 'timeEpoch': 1791358374, 'domainName': 'localhost', 'domainPrefix': 'localhost'}, 'body': '', 'pathParameters': {}, 'stageVariables': None, 'isBase64Encoded': False}
+2026-10-07 16:48:09,734 | Found one Lambda function with name 'ListInquiriesFunction'
+2026-10-07 16:48:09,735 | Invoking list_inquiries.lambda_handler (python3.11)
+2026-10-07 16:48:09,737 | Environment variables data found for specific function in standard format
+2026-10-07 16:48:09,739 | Resolving code path. Cwd=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build, CodeUri=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:48:09,740 | Resolved absolute path to code is C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:48:09,741 | Resolving code path. Cwd=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build, CodeUri=C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:48:09,743 | Resolved real code path to C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction
+2026-10-07 16:48:09,745 | Code C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction is not a zip/jar file
+2026-10-07 16:48:10,028 | Checking free port on 127.0.0.1:5825
+2026-10-07 16:48:10,163 | Using local image: public.ecr.aws/lambda/python:3.11-rapid-x86_64.
+
+2026-10-07 16:48:10,165 | Mounting C:\Users\ww-surface-90-u\Desktop\AI開発\inquiry-app-aws\.aws-sam\build\ListInquiriesFunction as /var/task:ro,delegated, inside runtime container
+2026-10-07 16:48:10,167 | ContainerClientFactory.create_client() called
+2026-10-07 16:48:10,168 | Admin preference: None
+2026-10-07 16:48:10,169 | Using auto-detected client creation
+2026-10-07 16:48:10,171 | Trying Docker client creation
+2026-10-07 16:48:10,172 | Creating Docker container client from environment variable.
+2026-10-07 16:48:10,173 | Creating container client with parameters: {'version': '1.35'}
+2026-10-07 16:48:10,176 | DockerContainerClient created successfully
+2026-10-07 16:48:10,191 | Fall back docker api version to 1.44: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:48:10,209 | Docker daemon check succeeded with fallback: 400 Client Error for http+docker://localnpipe/v1.35/_ping: Bad Request ("client version 1.35 is too old. Minimum supported API version is 1.40, please upgrade your client to a newer version")
+2026-10-07 16:48:10,211 | Using Docker as Container Engine.
+2026-10-07 16:48:10,212 | Set global container socket path: container_socket_path=
+2026-10-07 16:48:10,459 | SAM_CONTAINER_ID: 1fe79e97b829221584b569a63336c1b060d45143e08c3d6077b572cadb5eafa2
+2026-10-07 16:48:10,461 | Initialized container 1fe79e97b829221584b569a63336c1b060d45143e08c3d6077b572cadb5eafa2 with max_concurrency=1
+2026-10-07 16:48:11,529 | Starting a timer for 10 seconds for function 'ListInquiriesFunction'
+2026-10-07 16:48:11,538 | Container-1fe79e97b829 (concurrency available: 1/1) - ALLOWED for request ({"body": "", "cookies": [], "headers": {"Accept": "*/*", "Accept-Encoding": "gzip, deflate, br, zstd", "Accept-Language": "ja,en-US;q=0.9,en;q=0.8", "Connection": "keep-alive", "Host": "127.0.0.1:3000", "Origin": "http://localhost:5173", "Referer": "http://localhost:5173/", "Sec-Ch-Ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"", "Sec-Ch-Ua-Mobile": "?0", "Sec-Ch-Ua-Platform": "\"Windows\"", "Sec-Fetch-Dest": "empty", "Sec-Fetch-Mode": "cors", "Sec-Fetch-Site": "cross-site", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36", "X-Forwarded-Port": "3000", "X-Forwarded-Proto": "http"}, "isBase64Encoded": false, "pathParameters": {}, "rawPath": "/inquiries", "rawQueryString": "", "requestContext": {"accountId": "123456789012", "apiId": "1234567890", "domainName": "localhost", "domainPrefix": "localhost", "http": {"method": "GET", "path": "/inquiries", "protocol": "HTTP/1.1", "sourceIp": "127.0.0.1", "userAgent": "Custom User Agent String"}, "requestId": "b82bff4c-6318-4db1-ae0c-15813e45d347", "routeKey": "GET /inquiries", "stage": "$default", "time": "07/Oct/2026:07:32:54 +0000", "timeEpoch": 1791358374}, "routeKey": "GET /inquiries", "stageVariables": null, "version": "2.0"})
+START RequestId: 522ea4e8-e1d1-4db0-bfd7-93552c3c652b Version: $LATEST
+[INFO]	2026-10-07T07:48:13.265Z	522ea4e8-e1d1-4db0-bfd7-93552c3c652b	Scan table=InquiriesTable
+[INFO]	2026-10-07T07:48:13.266Z	522ea4e8-e1d1-4db0-bfd7-93552c3c652b	Using DynamoDB endpoint: http://host.docker.internal:8000 (region=ap-northeast-1)
+END RequestId: 522ea4e8-e1d1-4db0-bfd7-93552c3c652b
+REPORT RequestId: 522ea4e8-e1d1-4db0-bfd7-93552c3c652b	Init Duration: 0.08 ms	Duration: 1015.27 ms	Billed Duration: 1016 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
+2026-10-07 16:48:13,611 | [Container state] OOMKilled False
+2026-10-07 16:48:14,181 | Cleaning all decompressed code dirs
+2026-10-07 16:48:14 127.0.0.1 - - [07/Oct/2026 16:48:14] "GET /inquiries HTTP/1.1" 200 -
+^C

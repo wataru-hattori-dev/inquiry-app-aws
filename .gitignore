@@ -1,0 +1,2 @@
+# DynamoDB Local persistent data (local only)
+.dynamodb-data/
